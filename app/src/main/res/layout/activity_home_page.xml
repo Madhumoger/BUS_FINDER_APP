@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page">
+
+    <TextView
+        android:id="@+id/rtvFullName"
+        android:layout_width="213dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Full Name"
+        android:textAllCaps="true"
+        android:textColor="@color/Red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+    <TextView
+        android:id="@+id/rtvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/Red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/rtvFullName"
+        app:layout_constraintTop_toBottomOf="@id/rtvFullName"
+        />
+    <TextView
+        android:id="@+id/rtvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Mobile"
+        android:textColor="@color/Red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/rtvEmail"
+        app:layout_constraintTop_toBottomOf="@id/rtvEmail"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

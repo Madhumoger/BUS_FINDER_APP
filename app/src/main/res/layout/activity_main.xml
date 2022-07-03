@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="296dp"
+        android:layout_height="490dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cryptocurrency" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="212dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="101dp"
+        android:background="#F8B440"
+        android:paddingTop="20dp"
+        android:text="CURENCY CONVERTOR"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getbtn"
+        android:layout_width="313dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="49dp"
+        android:background="#FF5722"
+        android:text="GET STARTED"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
