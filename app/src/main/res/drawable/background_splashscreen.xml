@@ -3,8 +3,10 @@
     <item android:drawable="@color/white" />
     <item>
         <bitmap
-            android:gravity="center"
-            android:src="@drawable/cryptocurrency" />
+            android:gravity="fill"
+            android:src="@drawable/bus_icon" />
+
+<!--        <bitmap android:gravity="fill" android:src="@drawable/splash" />-->
     </item>
     <!--    <item>-->
     <!--        <bitmap android:src="@drawable/godsend" android:gravity="center"/>-->

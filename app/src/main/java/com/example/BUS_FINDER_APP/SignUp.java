@@ -119,11 +119,7 @@ private FirebaseFirestore db;
         mAuth.createUserWithEmailAndPassword(txtEmail,txtPassword).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                //Toast.makeText(SignUp.this,"Sign Up Successful"+e.getMessage())
-//                Toast.makeText(SignUp.this,"Sign Up Successful",Toast.LENGTH_SHORT).show();
-//                Intent intent= new Intent(SignUp.this,SignIn.class);
-//                startActivity(intent);
-//                finish();
+
                 Map<String, Object> user = new HashMap<>();
                 user.put("FullName", txtfullName);
                 user.put("Email", txtEmail);
@@ -134,7 +130,7 @@ private FirebaseFirestore db;
                         .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
-                                Toast.makeText(SignUp.this, "Data Stored succesfully", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUp.this, "Data  Stored succesfully", Toast.LENGTH_SHORT).show();
                                 Intent intent= new Intent(SignUp.this,SignIn.class);
                                 startActivity(intent);
                                 finish();

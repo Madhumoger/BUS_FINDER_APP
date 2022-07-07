@@ -14,7 +14,7 @@ import com.example.BUS_FINDER_APP.R;
 public class MainActivity extends AppCompatActivity {
 
 
-    Button getbtn;
+    Button getuser,getadmin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +23,26 @@ public class MainActivity extends AppCompatActivity {
         //status bar hide code
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getbtn=(Button) findViewById(R.id.getbtn);
+        getuser=(Button) findViewById(R.id.getuser);
+        getadmin=(Button) findViewById(R.id.getadmin);
 
 
-        getbtn.setOnClickListener(new View.OnClickListener() {
+        getuser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,SignUp.class);
                     startActivity(intent);
                 }
+
+
+        });
+
+        getadmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,adminPage.class);
+                startActivity(intent);
+            }
 
 
         });
