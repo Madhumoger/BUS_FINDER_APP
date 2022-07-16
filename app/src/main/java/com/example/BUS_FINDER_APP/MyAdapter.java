@@ -37,9 +37,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.Destination.setText(user.getDestination());
         holder.Source.setText(user.getSource());
         holder.Timing.setText(user.getTiming());
-        holder.St_tkt.setText(user.getSt_tkt());
+        holder.St_tkt.setText(user.getStd_ticket());
         //holder.St_tkt.setText(user.getTiming());
-        holder.Eld_tkt.setText(user.getEld_tkt());
+        holder.Eld_tkt.setText(user.getEld_ticket());
 
     }
 

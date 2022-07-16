@@ -24,11 +24,11 @@ public class User {
     }
 
 
-    public String getSt_tkt() {
+    public String getStd_ticket() {
         return std_ticket;
     }
 
-    public String getEld_tkt() {
+    public String getEld_ticket() {
         return eld_ticket;
     }
 
