@@ -51,16 +51,18 @@ public class Home_page extends AppCompatActivity {
             view = findViewById(R.id.btnView);
             delete = findViewById(R.id.btnDelete);
 
-            busdetails = FirebaseDatabase.getInstance().getReference().child("bus_details");
+            busdetails = FirebaseDatabase.getInstance().getReference().child(" ");
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    //String  searchbus_id=bus_id.getText().toString().trim();
                     String  searchdest =destination.getText().toString().trim();
                     String  searchsource =source.getText().toString().trim();
                     Intent intent= (new Intent(Home_page.this, displaydata.class));
                     intent.putExtra("destination",searchdest);
                     intent.putExtra("source",searchsource);
+                    //intent.putExtra("bus_id",searchbus_id);
                     startActivity(intent);
                     //startActivity(new Intent(Home_page.this, displaydata.class));
                 }

@@ -19,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class adminHomePage extends AppCompatActivity {
     EditText bus_id,bus_name,destination,source,timing,st_ticket,eld_ticket;
-    Button insert, view, delete;
+    Button insert, view, delete,update;
 //    DBHelper DB;
 
     //    TextView txtbus_id,txtbus_name,txtdestination,;
@@ -50,15 +50,25 @@ public class adminHomePage extends AppCompatActivity {
         insert = findViewById(R.id.btnInsert);
         view = findViewById(R.id.btnView);
         delete = findViewById(R.id.btnDelete);
+        //update = findViewById(R.id.btnUpdate);
+
 
         busdetails = FirebaseDatabase.getInstance().getReference().child("bus_details");
 
-//        view.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(adminHomePage.this, displaydata.class));
-//            }
-//        });
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                String  searchdest =destination.getText().toString().trim();
+//                String  searchsource =source.getText().toString().trim();
+              //String  searchbus_id=bus_id.getText().toString().trim();
+                //Intent intent= (new Intent(adminHomePage.this, displaydata.class));
+                Intent intent= (new Intent(adminHomePage.this,adminView.class));
+//                intent.putExtra("destination",searchdest);
+//                intent.putExtra("source",searchsource);
+               //intent.putExtra("bus_id",searchbus_id);
+                startActivity(intent);
+            }
+        });
 
         insert.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,23 +83,36 @@ public class adminHomePage extends AppCompatActivity {
 //            delete.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View v) {
-//                    String nameTXT = name.getText().toString();
+//                    String bus_idTXT = bus_id.getText().toString();
+//                    deleteBusDetails(bus_idTXT);
 //
-//                    Boolean checkdeletedata  = DB.deleteuserdata(nameTXT);
-//                    if(checkdeletedata==true)
-//                    {
-//                        Toast.makeText(Home_page.this, "Entry Deleted", Toast.LENGTH_SHORT).show();
-//                    }
-//                    else
-//                    {
-//                        Toast.makeText(Home_page.this, "Entry Not Deleted", Toast.LENGTH_SHORT).show();
-//                    }
+//                    //String bus_idTXT = bus_id.getText().toString();
+//
+//                    //Boolean checkdeletedata  = db.deleteuserdata(bus_idTXT);
+////                    if(checkdeletedata==true)
+////                    {
+////                        Toast.makeText(adminHomePage.this, "Entry Deleted", Toast.LENGTH_SHORT).show();
+////                    }
+////                    else
+////                    {
+////                        Toast.makeText(adminHomePage.this, "Entry Not Deleted", Toast.LENGTH_SHORT).show();
+////                    }
 //
 //                }
 //            });
 
 
     }
+
+    private void deleteBusDetails(String bus_idTXT) {
+
+        DatabaseReference drBus=FirebaseDatabase.getInstance().getReference("bus_details").child(bus_idTXT);
+        drBus.removeValue();
+        Toast.makeText(adminHomePage.this, "Entry Deleted", Toast.LENGTH_SHORT).show();
+
+    }
+
+    //
     private void insertBusDetails(){
 
         String bus_idTXT = bus_id.getText().toString();
@@ -101,8 +124,12 @@ public class adminHomePage extends AppCompatActivity {
         String eld_tktTXT = eld_ticket.getText().toString();
 
         bus_details bus_details=new bus_details(bus_idTXT,bus_nameTXT,destinationTXT,sourceTXT,timingTXT,std_tktTXT,eld_tktTXT);
+
+//        busdetails.addValueEventListener()
 ////
-        busdetails.push().setValue(bus_details);
+        busdetails.child(bus_idTXT).setValue(bus_details);
+
+        //busdetails.push().setValue(bus_details);
         Toast.makeText(adminHomePage.this, "Data Inserted", Toast.LENGTH_SHORT).show();
     }
     public void logout(View view) {

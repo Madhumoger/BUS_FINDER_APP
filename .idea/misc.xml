@@ -6,9 +6,11 @@
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/drawable/background_splashscreen.xml" value="0.22" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/drawable/rounded_corner.xml" value="0.22" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/drawable/roundedbutton.xml" value="0.22" />
-        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_admin_home_page.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_admin_home_page.xml" value="0.1" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_admin_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_home_page.xml" value="0.2" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_admin_view.xml" value="0.1" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_displaydataadmin.xml" value="0.1" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_sign_up.xml" value="0.22291666666666668" />

@@ -16,6 +16,12 @@
         android:theme="@style/Theme.CURRENCY_CONVERTOR_APP"
         tools:targetApi="31">
         <activity
+            android:name=".adminView"
+            android:exported="false" />
+        <activity
+            android:name=".displaydataadmin"
+            android:exported="false" />
+        <activity
             android:name=".adminHomePage"
             android:exported="false" />
         <activity
