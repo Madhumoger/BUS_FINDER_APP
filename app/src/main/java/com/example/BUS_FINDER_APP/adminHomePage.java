@@ -107,7 +107,7 @@ public class adminHomePage extends AppCompatActivity {
     }
     public void logout(View view) {
         //FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(getApplicationContext(),adminPage.class));
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
         finish();
     }
 }
