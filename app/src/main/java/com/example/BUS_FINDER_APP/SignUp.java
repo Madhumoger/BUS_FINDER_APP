@@ -62,6 +62,11 @@ private FirebaseFirestore db;
             }
         });
 
+        if (mAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), Home_page.class));
+            finish();
+        }
+
         signUpbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

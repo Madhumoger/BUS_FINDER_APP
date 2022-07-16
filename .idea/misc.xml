@@ -8,7 +8,7 @@
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/drawable/roundedbutton.xml" value="0.22" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_admin_home_page.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_admin_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_home_page.xml" value="0.2" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/BUS_FINDER_APP/app/src/main/res/layout/activity_sign_up.xml" value="0.22291666666666668" />
@@ -18,8 +18,13 @@
         <entry key="..\:/Users/madhu/AndroidStudioProjects/CURRENCY_CONVERTOR_APP/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/CURRENCY_CONVERTOR_APP/app/src/main/res/layout/activity_sign_in.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/CURRENCY_CONVERTOR_APP/app/src/main/res/layout/activity_sign_up.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_admin_home_page.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_admin_page.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_displaydata.xml" value="0.11018237082066869" />
-        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_home_page.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_main.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_sign_in.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_sign_up.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/activity_userlist.xml" value="0.11018237082066869" />
         <entry key="..\:/Users/madhu/AndroidStudioProjects/demoappplication/app/src/main/res/layout/list_item.xml" value="0.16" />
       </map>

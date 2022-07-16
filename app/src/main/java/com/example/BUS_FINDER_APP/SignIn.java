@@ -42,6 +42,7 @@ public class SignIn extends AppCompatActivity {
         signInbtn=findViewById(R.id.SignInbtn);
         // FIREBASE INITIALISE
         mAuth = FirebaseAuth.getInstance();
+
         txtSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +51,12 @@ public class SignIn extends AppCompatActivity {
 //                finish();
             }
         });
+
+
+        if (mAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), Home_page.class));
+            finish();
+        }
 
         signInbtn.setOnClickListener(new View.OnClickListener() {
             @Override

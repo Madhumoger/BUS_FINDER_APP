@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,6 +21,7 @@ public class Home_page extends AppCompatActivity {
 
     EditText bus_id,bus_name,destination,source,timing,st_ticket,eld_ticket;
     Button insert, view, delete;
+
 //    DBHelper DB;
 
 //    TextView txtbus_id,txtbus_name,txtdestination,;
@@ -31,6 +33,9 @@ public class Home_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        //status bar hide code
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         mAuth=FirebaseAuth.getInstance();
 //        db=FirebaseFirestore.getInstance();
 
@@ -51,9 +56,17 @@ public class Home_page extends AppCompatActivity {
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(Home_page.this, displaydata.class));
+                    String  searchdest =destination.getText().toString().trim();
+                    String  searchsource =source.getText().toString().trim();
+                    Intent intent= (new Intent(Home_page.this, displaydata.class));
+                    intent.putExtra("destination",searchdest);
+                    intent.putExtra("source",searchsource);
+                    startActivity(intent);
+                    //startActivity(new Intent(Home_page.this, displaydata.class));
                 }
             });
+
+
 
 //            insert.setOnClickListener(new View.OnClickListener() {
 //                @Override
@@ -100,5 +113,10 @@ public class Home_page extends AppCompatActivity {
 //                    busdetails.push().setValue(bus_details);
 //                    Toast.makeText(Home_page.this, "Data Inserted", Toast.LENGTH_SHORT).show();
 //    }
+public void logout(View view) {
+    FirebaseAuth.getInstance().signOut();
+    startActivity(new Intent(getApplicationContext(),SignIn.class));
+    finish();
+}
 }
 //eld_tcktTXT

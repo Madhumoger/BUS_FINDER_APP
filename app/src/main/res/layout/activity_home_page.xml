@@ -27,7 +27,7 @@ android:padding="10dp">
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_marginStart="256dp"
-            android:src="@drawable/cryptocurrency"
+            android:src="@drawable/bus_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -96,31 +96,6 @@ android:padding="10dp">
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Destination:"
-        android:layout_marginTop="10dp"
-        android:scrollbars="none"
-        android:textColorHint="@color/black"
-        app:boxStrokeColor="@color/black">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/dest"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textColorHint="@color/black"
-            android:layout_below="@id/email"
-            android:inputType="textEmailAddress"
-            android:singleLine="true"
-            />
-
-
-
-
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="Source:"
         android:layout_marginTop="10dp"
 
@@ -142,6 +117,32 @@ android:padding="10dp">
 
 
     </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination:"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:layout_below="@id/email"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            />
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 <!--    <com.google.android.material.textfield.TextInputLayout-->
 
 <!--        android:layout_width="match_parent"-->
@@ -252,7 +253,26 @@ android:padding="10dp">
             android:paddingTop="10dp"
             android:paddingEnd="20dp"
             android:paddingBottom="20dp"
-            android:text="View Data"
+            android:text="Search Bus"
+            app:cornerRadius="10dp"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textSize="16dp"
+            android:onClick="logout"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:text="Log Out"
             app:cornerRadius="10dp"/>
     </FrameLayout>
 <!--    <FrameLayout-->

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,6 +32,9 @@ public class adminHomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_home_page);
+        //status bar hide code
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         mAuth=FirebaseAuth.getInstance();
 //        db=FirebaseFirestore.getInstance();
@@ -100,6 +104,11 @@ public class adminHomePage extends AppCompatActivity {
 ////
         busdetails.push().setValue(bus_details);
         Toast.makeText(adminHomePage.this, "Data Inserted", Toast.LENGTH_SHORT).show();
+    }
+    public void logout(View view) {
+        //FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),adminPage.class));
+        finish();
     }
 }
 //eld_tcktTXT
